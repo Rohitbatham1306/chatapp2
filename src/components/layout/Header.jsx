@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {
   AppBar,
   Backdrop,
@@ -88,7 +89,7 @@ const Header = () => {
                 display: { xs: "none", sm: "block" },
               }}
             >
-              Chattu
+              chatApp
             </Typography>
 
             <Box

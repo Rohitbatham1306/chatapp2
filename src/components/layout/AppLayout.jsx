@@ -1,4 +1,5 @@
 import { Drawer, Grid, Skeleton } from "@mui/material";
+// eslint-disable-next-line no-unused-vars
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
@@ -64,7 +65,7 @@ const AppLayout = () => (WrappedComponent) => {
         if (data.chatId === chatId) return;
         dispatch(setNewMessagesAlert(data));
       },
-      [chatId]
+      [chatId, dispatch]
     );
 
     const newRequestListener = useCallback(() => {
